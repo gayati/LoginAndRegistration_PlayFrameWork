@@ -1,0 +1,18 @@
+# App name
+app.name = My First Play
+
+#Title
+page.title = User Registration
+page1.title = Login
+
+# Flash Scope
+flash.success = success
+flash.error = error
+
+#Labels
+userid=UserId
+firstname = FirstName
+lastname = LastName
+mobile = Mobile
+email = Email
+password = Password

@@ -1,0 +1,21 @@
+ @()(implicit request:RequestHeader, session:Session )
+<h1> @request.session.get("firstName") </h1>
+
+ 
+ @if(request.session.get("firstName").equals(None)){
+<h1> @request.session.get("firstName") </h1>
+ 		@routes.HomeController.loginUser()
+ 	}else{
+ <form  action='@routes.HomeController.logout()'>
+<h2>
+   Welcome  @request.session.get("firstName")  
+</h2>
+<div class="form-actions controls ynt-btn-xlarge">
+    <button type="submit" class="btn btn-primary ynt-btn-orange">Logout</button>
+</div>
+</form>
+ 	}
+ 
+
+
+    
